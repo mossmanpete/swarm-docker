@@ -4,4 +4,4 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-exec /swarm-smoke $@ 2>&1
+/swarm-smoke $@ 2>&1 || true
